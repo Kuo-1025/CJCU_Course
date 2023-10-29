@@ -41,7 +41,6 @@ def RESW(thrd: str) -> list:
     return int(thrd) * 3, ""
 
 def Assambler() -> None:
-    EMPTY = ""
     LOCATION, ADD = 0, 0
     RESULT, FUNC_LOC = [], defaultdict(int)
 
@@ -115,12 +114,6 @@ def Assambler() -> None:
                         RESULT[idx][4] = SIC_Instruction.instruction[RESULT[idx][2]] + hex(FUNC_LOC[RESULT[idx][3]] + int("8000", 16))[2:].upper().zfill(4)
                     else:
                         RESULT[idx][4] = SIC_Instruction.instruction[RESULT[idx][2]] + hex(FUNC_LOC[RESULT[idx][3]])[2:].upper()
-
-        for res in RESULT:
-            for s in res:
-                print(f"{s:<10}", end="")
-
-            print()
 
     with open("OUTPUT.txt", "w", encoding="UTF-8") as fi:
         for i in range(len(RESULT)):
