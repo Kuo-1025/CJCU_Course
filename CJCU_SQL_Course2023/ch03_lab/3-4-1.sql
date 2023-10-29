@@ -1,0 +1,1 @@
+INSERT INTO Employee VALUES ('S006', '¤»¦X', D003)
