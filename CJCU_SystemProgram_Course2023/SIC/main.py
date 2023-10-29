@@ -128,4 +128,5 @@ def Assambler() -> None:
  
     return
 
-Assambler()
+if __name__ == "__main__":
+    Assambler()
