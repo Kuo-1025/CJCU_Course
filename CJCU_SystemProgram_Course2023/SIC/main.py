@@ -117,7 +117,7 @@ def Assambler() -> None:
 
     with open("OUTPUT.txt", "w", encoding="UTF-8") as fi:
         for i in range(len(RESULT)):
-            fi.write(f"{(i + 1) * 5:<10}{RESULT[i][0]:<10}{RESULT[i][1]:<10}{RESULT[i][2]:<10}{RESULT[i][3]:<10}{RESULT[i][4]:<10}\n")
+            fi.write(f"{(i + 1) * 5:<10}{RESULT[i][0].zfill(6):<10}{RESULT[i][1]:<10}{RESULT[i][2]:<10}{RESULT[i][3]:<10}{RESULT[i][4].zfill(6):<10}\n")
  
     return
 
