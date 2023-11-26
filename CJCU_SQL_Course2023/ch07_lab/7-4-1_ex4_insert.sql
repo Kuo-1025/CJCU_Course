@@ -1,32 +1,32 @@
-USE ch07_lab
+ï»¿USE ch07_lab
 
 CREATE TABLE Employee_OLD (
     Em_id CHAR(5),
-	Em_name NVARCHAR(10) NOT NULL,
-	Em_dep NVARCHAR(10) NULL,
-	gender NCHAR(1),
-	PRIMARY KEY(Em_id)
+    Em_name NVARCHAR(10) NOT NULL,
+    Em_dep NVARCHAR(10) NULL,
+    gender NCHAR(1),
+    PRIMARY KEY(Em_id)
 )
 
 INSERT INTO Employee_OLD VALUES
-('S0006', '¤»©M', '¾P°â³¡', '¤k'),
-('S0007', '¤C½å', '¾P°â³¡', '¤k'),
-('S0008', '¤K¼w', '¥Í²£³¡', '¨k'),
-('S0009', '¤E¦p', '¥Í²£³¡', '¤k'),
-('S0010', '¤Q¥ş', '¥Í²£³¡', '¨k')
+('S0006', 'å…­å’Œ', 'éŠ·å”®éƒ¨', 'å¥³'),
+('S0007', 'ä¸ƒè³¢', 'éŠ·å”®éƒ¨', 'å¥³'),
+('S0008', 'å…«å¾·', 'ç”Ÿç”¢éƒ¨', 'ç”·'),
+('S0009', 'ä¹å¦‚', 'ç”Ÿç”¢éƒ¨', 'å¥³'),
+('S0010', 'åå…¨', 'ç”Ÿç”¢éƒ¨', 'ç”·')
 
 -- In order to add the "Employee_Old" table to "Employee" table
 -- We add column "gender" in table "Employee"
 
 ALTER TABLE Employee
-ADD gender NCHAR(1) Default '¨k' WITH VALUES
+ADD gender NCHAR(1) Default 'ç”·' WITH VALUES
 
--- We only updated the names of "¤T¦h" and "¤­ºÖ"
--- Because other gender are defaulted to '¨k'
+-- We only updated the names of "ä¸‰å¤š" and "äº”ç¦"
+-- Because other gender are defaulted to 'ç”·'
 
 UPDATE Employee
-SET gender = '¤k'
-WHERE Em_name = '¤T¦h' OR Em_name = '¤­ºÖ'
+SET gender = 'å¥³'
+WHERE Em_name = 'ä¸‰å¤š' OR Em_name = 'äº”ç¦'
 
 -- Then we add "Employee_OLD" table to "Employee" table
 
