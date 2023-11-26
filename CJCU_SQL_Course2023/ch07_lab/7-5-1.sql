@@ -17,11 +17,11 @@ CREATE TABLE Department (
 -- 2.
 
 CREATE TABLE Teacher (
-Teacher_id CHAR(5),
-Teacher_name NVARCHAR(10) NOT NULL,
-Dep_code CHAR(5),
-PRIMARY KEY(Teacher_id),
-FOREIGN KEY(Dep_code) REFERENCES Department ON UPDATE CASCADE ON DELETE CASCADE
+    Teacher_id CHAR(5),
+    Teacher_name NVARCHAR(10) NOT NULL,
+    Dep_code CHAR(5),
+    PRIMARY KEY(Teacher_id),
+    FOREIGN KEY(Dep_code) REFERENCES Department ON UPDATE CASCADE ON DELETE CASCADE
 )
 
 CREATE TABLE Student (
