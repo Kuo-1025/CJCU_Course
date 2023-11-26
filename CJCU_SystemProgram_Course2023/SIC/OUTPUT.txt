@@ -15,7 +15,7 @@
 75        000128              RSUB                4C0000    
 80        00012B    EOF       BYTE      C'EOF'    454F46    
 85        00012E    THREE     WORD      458425    06FEB9    
-90        000131    ZERO      WORD      -144      FFFF70    
+90        000131    ZERO      WORD      -20       FFFFEC    
 95        000134    RETADR    RESW      1         000000    
 100       000137    LENGTH    RESW      1         000000    
 105       00013A    BUFFER    RESB      4096      000000    
