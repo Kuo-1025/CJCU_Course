@@ -14,7 +14,7 @@ CREATE TABLE Costumer (
     Costumer_name NVARCHAR(10) NOT NULL,
     Phone NVARCHAR(20) NULL,
     Fax NVARCHAR(20) NULL,
-	PRIMARY KEY(Costumer_id)
+    PRIMARY KEY(Costumer_id)
 )
 
 CREATE TABLE Product (
@@ -38,9 +38,9 @@ CREATE TABLE Order_file (
 
 CREATE TABLE Order_detail (
     Order_id CHAR(5),
-	P_id CHAR(5),
-	OrderAmount INT NOT NULL,
-	PRIMARY KEY(Order_id, P_id),
-	FOREIGN KEY(Order_id) REFERENCES Order_file ON UPDATE NO ACTION ON DELETE NO ACTION,
-	FOREIGN KEY(P_id) REFERENCES Product ON UPDATE NO ACTION ON DELETE NO ACTION
+    P_id CHAR(5),
+    OrderAmount INT NOT NULL,
+    PRIMARY KEY(Order_id, P_id),
+    FOREIGN KEY(Order_id) REFERENCES Order_file ON UPDATE NO ACTION ON DELETE NO ACTION,
+    FOREIGN KEY(P_id) REFERENCES Product ON UPDATE NO ACTION ON DELETE NO ACTION
 )
