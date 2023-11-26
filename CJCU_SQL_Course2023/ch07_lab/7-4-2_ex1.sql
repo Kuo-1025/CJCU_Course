@@ -1,5 +1,5 @@
-USE ch07_lab
+ï»¿USE ch07_lab
 
 UPDATE Employee
-SET Em_dep = '¥Í²£³¡'
-WHERE Em_name = '¤»¦X'
+SET Em_dep = 'ç”Ÿç”¢éƒ¨'
+WHERE Em_name = 'å…­åˆ'
