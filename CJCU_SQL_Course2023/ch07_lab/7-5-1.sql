@@ -8,10 +8,10 @@ USE ch07_lab
 -- 1.
 
 CREATE TABLE Department (
-Dep_code CHAR(5),
-Dep_name NVARCHAR(10) NOT NULL,
-Dep_chair NVARCHAR(10),
-PRIMARY KEY(Dep_code)
+	Dep_code CHAR(5),
+	Dep_name NVARCHAR(10) NOT NULL,
+	Dep_chair NVARCHAR(10),
+	PRIMARY KEY(Dep_code)
 )
 
 -- 2.
