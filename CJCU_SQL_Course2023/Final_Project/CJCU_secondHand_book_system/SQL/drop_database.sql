@@ -1,0 +1,1 @@
+DROP DATABASE CJCU_second_hand_book_system;
