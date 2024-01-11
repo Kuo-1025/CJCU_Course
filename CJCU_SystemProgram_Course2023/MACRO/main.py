@@ -1,5 +1,5 @@
 def isComment(line: str) -> bool:
-    return line[0] == '.' or len(line) == 0
+    return len(line) == 0 or line[0] == '.'
 
 with open('INPUT.txt', 'r', encoding='UTF-8') as f:
     inp = f.readlines()
