@@ -1,1 +1,1 @@
-# Here I put some homework or project that I finished in CJCU.
+# Here I upload some homework or project that I finished in CJCU.
